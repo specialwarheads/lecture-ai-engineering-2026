@@ -88,7 +88,10 @@ GitHub の自分の fork で、`lec01` → `main` の PR を作成します。**
 モデルの切り替え例：
 
 ```bash
+AIE_MODEL=gemini-3.5-flash-lite uv run python -m app.ask "LoRAとは何ですか？"
 AIE_MODEL=gemini-3.5-flash uv run python -m app.ask "LoRAとは何ですか？"
+AIE_MODEL=gemini-3.6-flash uv run python -m app.ask "LoRAとは何ですか？"
+AIE_MODEL=gemini-3.8-flash uv run python -m app.ask "LoRAとは何ですか？"
 ```
 
 temperature を変えるには、`generate_content` の `config` 引数を調べてみましょう。
